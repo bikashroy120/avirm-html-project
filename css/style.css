@@ -1,0 +1,655 @@
+/* Fonts  */
+
+@font-face {
+    font-family: AirbnbCereal_W_Bd;
+    src: url("../airbnb-cereal-font/AirbnbCereal_W_Bd.otf");
+}
+
+@font-face {
+    font-family: AirbnbCereal_W_Bk;
+    src: url("../airbnb-cereal-font/AirbnbCereal_W_Bk.otf");
+}
+
+@font-face {
+    font-family: AirbnbCereal_W_Blk;
+    src: url("../airbnb-cereal-font/AirbnbCereal_W_Blk.otf");
+}
+
+@font-face {
+    font-family: AirbnbCereal_W_Lt;
+    src: url("../airbnb-cereal-font/AirbnbCereal_W_Lt.otf");
+}
+
+@font-face {
+    font-family: AirbnbCereal_W_Md;
+    src: url("../airbnb-cereal-font/AirbnbCereal_W_Md.otf");
+}
+
+@font-face {
+    font-family: AirbnbCereal_W_XBd;
+    src: url("../airbnb-cereal-font/AirbnbCereal_W_XBd.otf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: AirbnbCereal_W_Bd;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* Home area  */
+
+.main{
+    height: 95vh;
+    width: 100%;
+    background-image: url(../images/Homepage_BG.png);
+    /* background: linear-gradient(tomato,orangered); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    padding-top: 50px;
+    position: relative;
+}
+
+.navber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 950px;
+    margin: 0px auto;
+    background-color: #8F6F3E;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    opacity: 1;
+    backdrop-filter: blur(39px);
+    -webkit-backdrop-filter: blur(39px);
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+
+.logo img{
+    width: 200px;
+    height: 80px;
+}
+
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-family: AirbnbCereal_W_Bk;
+    font-weight: normal;
+} 
+
+
+.scrolldown-container {
+    position: relative;
+   
+  }
+  .scrolldown-container .scrolldown-btn {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+  }
+  .scrolldown-container .scrolldown-btn svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .scrolldown-container .scrolldown-btn svg path.first-path {
+    animation: scrollanim 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+  }
+  .scrolldown-container .scrolldown-btn svg path.second-path {
+    animation: scrollanim2 1s ease-in-out infinite;
+  }
+  
+  @-webkit-keyframes scrollanim {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0.8;
+    }
+  }
+  @-moz-keyframes scrollanim {
+    0% {
+      -moz-transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -moz-transform: translate(0, 0);
+      opacity: 0.8;
+    }
+  }
+  @keyframes scrollanim {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      -moz-transform: translate(0, -40px);
+      -ms-transform: translate(0, -40px);
+      -o-transform: translate(0, -40px);
+      transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 0.8;
+    }
+  }
+  @-webkit-keyframes scrollanim2 {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0px);
+      opacity: 0.6;
+    }
+  }
+  @-moz-keyframes scrollanim2 {
+    0% {
+      -moz-transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -moz-transform: translate(0, 0px);
+      opacity: 0.6;
+    }
+  }
+  @keyframes scrollanim2 {
+    0% {
+      -webkit-transform: translate(0, -40px);
+      -moz-transform: translate(0, -40px);
+      -ms-transform: translate(0, -40px);
+      -o-transform: translate(0, -40px);
+      transform: translate(0, -40px);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: translate(0, 0px);
+      -moz-transform: translate(0, 0px);
+      -ms-transform: translate(0, 0px);
+      -o-transform: translate(0, 0px);
+      transform: translate(0, 0px);
+      opacity: 0.6;
+    }
+  }
+
+.hero_area{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 100%;
+}
+
+.hero_area h2{
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: AirbnbCereal_W_Bd;
+  font-weight: bold;
+  font-size: 40px;
+  width: 100%;
+}
+
+.scrol_down_icon{
+  margin-top: 10px;
+}
+
+
+/* about area */
+
+.about-box{
+  padding-top: 100px;
+  background-image: url(../images/Scroll\ Group\ 6.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about_text{
+  padding-top: 250px;
+  color: #fff;
+}
+
+.about_text h2{
+  font-size: 50px;
+  font-family: AirbnbCereal_W_MD;
+}
+
+.about_text p{
+  font-size: 20px;
+  font-family: AirbnbCereal_W_Bk;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.about_area{
+  width: 100%;
+  height: 700px;
+  background-color: #000C19;
+  background-image: url(../images/Group\ 5.png);
+  /* background: linear-gradient(tomato,orangered); */
+  background-repeat: no-repeat;
+  background-size: 1000px 650px;
+  background-position: right;
+}
+
+.about_btn{
+  padding: 10px 20px;
+  background: #14065B;
+  color: #fff;
+  margin-top: 15px;
+  font-family: AirbnbCereal_W_Bk;
+  outline: none;
+  border: none;
+}
+
+.about-box{
+  background-color: #000C19;
+}
+
+.about_box_item{
+  width: 530px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 100px;
+  background-color: #000C19;
+}
+
+
+.about_box_item .first_img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.secend_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.secend_img img{
+  width: 100px;
+  height: 100px;
+}
+
+/* .scroll_3_img{
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+} */
+
+
+.about_hr{
+  margin-top: 170px;
+}
+
+
+.hr{
+  margin-top: 170px;
+  height: 1px;
+  width: 900px;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+.about_box_text h2{
+ position: absolute;
+ bottom: -9px;
+ background-color: #000C19;
+ color: #fff;
+ width: 100%;
+ box-shadow: 0px -10px 10px 10px #000C19;
+}
+
+.about_box_text{
+  width: 100%;
+  height: 100%;
+}
+
+
+.headding{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.headding h2{
+  color: #fff;
+  font-size: 50px;
+}
+
+.headding p{
+  text-align: center;
+  color: #fff;
+}
+
+.OUR_SKILS{
+  background-color: #000C19;
+  padding: 100px 0;
+}
+
+.skill_Item{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* .skils_content img{
+  width: 100px;
+  height: 70px;
+} */
+
+.skils_content_item .skils_content{
+  width: 300px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skils_content_item :nth-child(1) img{
+  width: 89px;
+  height: 126px;
+}
+
+.skils_content_item :nth-child(2) img{
+  width: 245px;
+  height: 126px;
+}
+
+.skils_content_item :nth-child(3) img{
+  width: 95px;
+  height: 127px;
+}
+
+.skils_content_item :nth-child(4) img{
+  width: 144px;
+  height: 126px;
+}
+
+.skils_content_item :nth-child(5) img{
+  width: 178px;
+  height: 120px;
+}
+
+.skils_content_item :nth-child(6) img{
+  width: 83px;
+  height: 126px;
+}
+
+.skils_content_item :nth-child(7) img{
+  width: 220px;
+  height: 120px;
+}
+
+.skils_content_item :nth-child(8) img{
+  width: 232px;
+  height: 127px;
+}
+
+
+
+.PILLARS{
+  background-color: #000C19;
+  padding: 10px 0;
+  padding-bottom: 70px;
+  overflow: hidden;
+  background-image: url(../images/Scroll\ Group\ 16.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.PILLARS1{
+  position: relative;
+}
+
+.PILLARS-ITEM1 img{
+  width: 700px;
+  position: absolute;
+  left: -60px;
+}
+
+.PILLARS-ITEM img{
+  width: 550px;
+}
+
+.PILLARS-ITEM3 img{
+  width: 700px;
+  position: absolute;
+  right: -60px;
+}
+
+
+
+.flow{
+  background-color: #000C19;
+}
+
+
+.flow_item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  padding-bottom: 150px;
+  position: relative;
+}
+
+.flow_item img{
+  width: 550px;
+  height: 550px;
+
+}
+
+.flow-item-img img:nth-child(1){
+  width: 300px;
+  height: 239px;
+  position: absolute;
+  top: 182px;
+  left: 144px;
+}
+
+.flow-item-img img:nth-child(2){
+  width: 300px;
+  height: 239px;
+  position: absolute;
+  top: 16px;
+  left: 730px;
+}
+
+.flow-item-img img:nth-child(3){
+  width: 300px;
+  height: 239px;
+  position: absolute;
+  top: 394px;
+  left: 853px;
+}
+
+.flow-item-img img:nth-child(4){
+  width: 300px;
+  height: 239px;
+  position: absolute;
+  top: 591px;
+  left: 237px;
+}
+
+
+
+
+.rise{
+  background-color: #000C19;
+  padding: 10px 10px;
+}
+
+.ress_img{
+  position: relative;
+}
+
+.ress_img img{
+  width: 100%;
+}
+
+.rise_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.rise_content h2{
+  font-size: 50px;
+}
+
+.rise_content p{
+  font-size: 30px;
+}
+
+.COLLECTION{
+  background-color: #000C19;
+  padding: 50px 10px;
+}
+
+.COLLECTION_IMG img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.thinking_content{
+  position: absolute;
+  top: 0;
+  left: 100px;
+  color: #fff;
+}
+
+
+.content-rise{
+  margin-top: 100px;
+}
+
+
+.content-rise h2{
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.content-rise p{
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.thinking_btn{
+  padding: 10px 20px;
+  background-color: #2B2872;
+  border: none;
+  outline: navajowhite;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+footer{
+  background-color: #000C19;
+  padding: 10px 10px;
+  padding-top: 150px;
+}
+
+.fotter{
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.fotter div{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.fotter div h3{
+  font-size: 20px;
+}
+
+.fotter div a{
+  font-size: 20px;
+  color: #fff;
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
