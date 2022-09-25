@@ -1,0 +1,304 @@
+@font-face {
+    font-family: AirbnbCereal-bold;
+    src: url(../vendor/fonts/AirbnbCereal_W_Bd.otf);
+
+    font-family: AirbnbCereal-medium;
+    src: url(vendor/fonts/AirbnbCereal_W_Md.otf);
+}
+
+body{
+    font-family: AirbnbCereal-medium;
+}
+#header{
+    background-image: url(../vendor/Images/header-background.png);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header .container .navbar-brand img{
+    width: 180px;
+}
+#header .container{
+    padding-top: 20px;
+}
+#header .container .navbar{
+    width: 1287px;
+    height: 80px;
+    border-radius: 20px;
+    border: 1px solid rgb(224, 224, 224);
+    background-color: #614244 !important;
+    padding: 0px 40px;
+}
+#header .container .navbar .navbar-collapse ul{
+    margin-left: auto;
+} 
+#header .container .navbar .navbar-collapse ul li a{
+    color: #fff;
+    font-family: AirbnbCereal-medium;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+
+
+#item {
+    display: flex;
+    justify-content: center;
+    margin-top: 58vh;
+}
+#item .single-item img{
+    margin: 10px;
+    position: relative;
+    width: 374px;
+    height: 266px;
+}
+
+
+#item .single-item img:hover{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
+        /*====Header style End===*/
+
+
+
+
+#pick-area{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background: #000C19;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#pick-area .line{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    margin-bottom: 40px;
+}
+#pick-area .line .box{
+    height: 1px;
+    width: 700px;
+    background: rgb(138, 138, 138);
+    align-items: center;
+}
+#pick-area h2{
+    color: #fff;
+    margin-top: 80px;
+
+}
+#pick-area .button-area{
+    margin-top: 30px;
+}
+#pick-area .button-area .single-btn{
+    background: #26323F;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+#pick-area .button-area .single-btn i{
+    margin-right: 10px;
+}
+#pick-area .button-area .single-btn span{
+    font-size: 14px;
+}
+
+#pick-area .single-item{
+    padding: 15px;
+    margin-top: 70px;
+    background: #26323F;
+    height: 391px;
+    width: 324px;
+    border: 1px solid #707070;
+    border-radius: 19px;
+    position: relative;
+}
+#pick-area .single-item .image{
+    height: 281px;
+    border-radius: 24px;
+}
+#pick-area .single-item .candy-bear{
+    background: transparent url('../vendor/Images/red.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item .image img{
+    float: right;
+    padding: 5px;
+    background: #6566B8;
+    border-radius: 5px;
+    margin: 15px 15px 0px 0px;
+}
+#pick-area .single-item .text{
+    text-align: center;
+    margin-top: 35px;
+}
+#pick-area .single-item .text h3{
+    color: #fff;
+    font-size: 26px;
+}
+#pick-area .single-item .btn{
+    background: yellow;
+    color: #0000 !important;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 35px;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 180px;
+}
+
+#pick-area .single-item a{
+    display: inline-block;
+    padding: 5px 40px;
+    background: yellow;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 40px;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 150px;
+    display: none;
+}
+#pick-area .single-item .cave-monster{
+    background: transparent url('../vendor/Images/cave-monster.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item .frog-man{
+    background: transparent url('../vendor/Images/frog-man.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item .giant{
+    background: transparent url('../vendor/Images/giant.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item .goblins{
+    background: transparent url('../vendor/Images/goblins.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item .hippo{
+    background: transparent url('../vendor/Images/hippo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item .horse-women{
+    background: transparent url('../vendor/Images/horse-women.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item .horse-women{
+    background: transparent url('../vendor/Images/horse-women.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item .harmaid{
+    background: transparent url('../vendor/Images/harmaid.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item .mushroom-man{
+    background: transparent url('../vendor/Images/mushroom-man.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pick-area .single-item:hover{
+    border: 2px solid yellow;
+    transition: 0.5s ease;
+}
+#pick-area .single-item:hover a{
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+
+        /*Shape Design start*/
+
+#pick-area .single-item .shape .dot{
+    position: absolute;
+    color: yellow !important;
+    font-size: 35px;
+    margin-left: -40px;
+    margin-top: -300px;
+}
+#pick-area .single-item .shape .dot2{
+    position: absolute;
+    color: yellow !important;
+    font-size: 35px;
+    margin-left: 150px;
+    margin-top: -400px;
+}
+#pick-area .single-item .shape .dot3{
+    position: absolute;
+    color: yellow !important;
+    font-size: 100px;
+    margin-left: 300px;
+    margin-top: -400px;
+}
+#pick-area .single-item .shape .dot4{
+    position: absolute;
+    color: yellow !important;
+    font-size: 100px;
+    margin-left: 50px;
+    margin-top: -500px;
+}
+#pick-area .single-item .shape .plus{
+    position: absolute;
+    color: yellow !important;
+    font-size: 60px;
+    margin-left: -50px;
+    margin-top: -450px;
+    rotate: 45deg;
+}
+#pick-area .single-item .shape .plus2{
+    position: absolute;
+    color: yellow !important;
+    font-size: 100px;
+    margin-left: 280px;
+    margin-top: -250px;
+    rotate: 45deg;
+}
+#pick-area .single-item .shape{
+    display: none;
+}
+#pick-area .single-item:hover .shape{
+    display: block;
+    transition: 0.5s ease;
+}
+        /*Shape Design end*/
+
+#pick-area .btn{
+    width: 100%;
+    text-align: center;
+}
+#pick-area .btn a{
+    display: block;
+    color: #4E4E4E;
+    text-decoration: none;
+    margin-top: 50px;
+}
+#pick-area .bottom-line{
+    margin-top: 250px;
+}
