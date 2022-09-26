@@ -61,7 +61,7 @@ a {
   background-image: url(../images/Homepage_BG.png);
   /* background: linear-gradient(tomato,orangered); */
   background-repeat: no-repeat;
-  background-size: 100% 950px;
+  background-size: cover;
   background-position-y: top;
   /* display: flex;
     align-items: center;
@@ -249,7 +249,7 @@ a {
   z-index: 1;
   width: 100vw;
   height: 150px;
-  box-shadow: 10px 10px 50px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 50px 80px rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   padding-bottom: 20px;
