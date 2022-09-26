@@ -26,15 +26,18 @@ $(document).ready(function () {
     $(".menu ul").slideUp();
   });
   $("#img1").click(function () {
-    var imageUrl = "../vendor/Images/11.png";
-    $(".frotfilio").css("background-image", "url(" + imageUrl + ")");
+    $("#img1").addClass("active");
+    $("#img2").removeClass("active");
+    $("#img3").removeClass("active");
   });
   $("#img2").click(function () {
-    var imageUrl2 = "../vendor/Images/item-2.png";
-    $(".frotfilio").css("background-image", "url(" + imageUrl2 + ")","");
+    $("#img1").removeClass("active");
+    $("#img2").addClass("active");
+    $("#img3").removeClass("active");
   });
   $("#img3").click(function () {
-    var imageUrl3 = "../vendor/Images/item-3.png";
-    $(".frotfilio").css("background-image", "url(" + imageUrl3 + ")");
+    $("#img1").removeClass("active");
+    $("#img2").removeClass("active");
+    $("#img3").addClass("active");
   });
 });
