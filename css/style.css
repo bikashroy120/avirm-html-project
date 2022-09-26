@@ -42,6 +42,7 @@ html {
 
 body {
   font-family: AirbnbCereal_W_Bd;
+  overflow-x: hidden;
 }
 
 a {
