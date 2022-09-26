@@ -56,12 +56,12 @@ a {
 }
 
 .main {
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   background-image: url(../images/Homepage_BG.png);
   /* background: linear-gradient(tomato,orangered); */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 950px;
   background-position-y: top;
   /* display: flex;
     align-items: center;
@@ -243,13 +243,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   width: 100vw;
-  box-shadow: 10px 10px 50px 80px #000c19;
-  background-color: #000c19;
+  height: 150px;
+  box-shadow: 10px 10px 50px 40px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   padding-bottom: 20px;
 }
@@ -259,7 +260,7 @@ a {
   margin-bottom: 10px;
   font-family: AirbnbCereal_W_Bd;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   width: 100%;
 }
 
