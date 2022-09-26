@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/fontawesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <div class="main">
+
+
+        
         <div class="container">
           <!-- navber -->
           <div class="navber">
@@ -18,11 +25,12 @@
               <img src="./images/Logo.png" alt="" />
             </div>
             <nav class="nav">
-              <ul>
-                <li><a href="index.html">HOME</a></li>
+              <ul class="item">
+                <li><a class="active" href="index.html">HOME</a></li>
                 <li><a href="protfolio.html">PORTFOLIO</a></li>
                 <li><a href="#footer">CONTACT</a></li>
               </ul>
+              <a class="ber" href="#"><i class="fas fa-bars"></i></a>
             </nav>
           </div>
 
@@ -53,11 +61,6 @@
                       fill="#FFFFFF"
                       d="M24.752,79.182c-0.397,0-0.752-0.154-1.06-0.463L2.207,57.234c-0.306-0.305-0.458-0.656-0.458-1.057                  s0.152-0.752,0.458-1.059l2.305-2.305c0.309-0.309,0.663-0.461,1.06-0.461c0.398,0,0.752,0.152,1.061,0.461l18.119,18.119                  l18.122-18.119c0.306-0.309,0.657-0.461,1.057-0.461c0.402,0,0.753,0.152,1.059,0.461l2.306,2.305                  c0.308,0.307,0.461,0.658,0.461,1.059s-0.153,0.752-0.461,1.057L25.813,78.719C25.504,79.027,25.15,79.182,24.752,79.182z"
                     ></path>
-                    <path
-                      class="second-path"
-                      fill="#FFFFFF"
-                      d="M24.752,58.25c-0.397,0-0.752-0.154-1.06-0.463L2.207,36.303c-0.306-0.304-0.458-0.655-0.458-1.057                  c0-0.4,0.152-0.752,0.458-1.058l2.305-2.305c0.309-0.308,0.663-0.461,1.06-0.461c0.398,0,0.752,0.153,1.061,0.461l18.119,18.12                  l18.122-18.12c0.306-0.308,0.657-0.461,1.057-0.461c0.402,0,0.753,0.153,1.059,0.461l2.306,2.305                  c0.308,0.306,0.461,0.657,0.461,1.058c0,0.401-0.153,0.753-0.461,1.057L25.813,57.787C25.504,58.096,25.15,58.25,24.752,58.25z"
-                    ></path>
                   </svg></a>
                 </div>
               </div>
@@ -69,29 +72,30 @@
     <!-- about section -->
      <section class="about" id="about">
       <div class="about_area">
+        <div class="background_img" data-aos="fade-up">
+          <div class="background_img_scrol">
+            <img src="./images//Group 5.png" alt="">
+          </div>
+      </div>
         <div class="container">
           <div class="row about_content">
             <div class="col-md-6 col-11 about_text">
-              <h2>ABOUT</h2>
-              <p>
+              <h2 data-aos="fade-up">ABOUT</h2>
+              <p data-aos="fade-up">
                 We are a bag of different sparks. A bunch of fine arts fanatics,
                 3d aficionados, storyboard directors, and game design geeks. To
                 build in metaverse is our collective calling, and to build with
                 aesthetics is our tribe’s covenant.
               </p>
 
-              <div class="ourbtn">
-                <button class="about_btn">PORTFOLIO</button>
+              <div class="ourbtn" data-aos="fade-up">
+                <a href="protfolio.html" class="about_btn">PORTFOLIO</a>
                 <!-- <img src="./images//Component 3 – 6.svg" alt="" class="btn-btn-1"> -->
                 <div class="btn-btn-1"></div>
                 <div class="btn-btn-2"></div>
                 <div class="btn-btn-3"></div>
                 <div class="btn-btn-4"></div>
               </div>
-            </div>
-
-            <div class="background_img">
-
             </div>
           </div>
         </div>
@@ -104,7 +108,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="about_box_item">
+              <div class="about_box_item" data-aos="fade-down">
                 <img
                   src="./images/Animoca-Brands-The-Sandbox-metaverse-LAND-sale-SAND-NFTs.png"
                   alt=""
@@ -154,7 +158,7 @@
 
             <div class="col-md-6">
 
-              <div class="about_box_item">
+              <div class="about_box_item" data-aos="fade-up">
                 <img
                   src="./images/roblox-x-edc@2x.png"
                   alt=""
@@ -205,7 +209,7 @@
             </div>
 
             <div class="col-md-6">
-              <div class="about_box_item">
+              <div class="about_box_item" data-aos="fade-down">
                 <img
                    src="./images/Unreal+Engine.png"
                   alt=""
@@ -255,7 +259,7 @@
             </div>
 
             <div class="col-md-6">
-              <div class="about_box_item">
+              <div class="about_box_item" data-aos="fade-up">
                 <img
                    src="./images/2_party (2).png"
                   alt=""
@@ -313,33 +317,33 @@
    <section class="OUR_SKILS">
       <div class="container">
         <div class="headding">
-          <h2>OUR SKILS</h2>
+          <h2 data-aos="fade-up">OUR SKILS</h2>
         </div>
 
         <div class="skill_Item">
           <div class="skils_content_item">
-            <div class="col-md-3 col-3 skils_content">
+            <div class="col-md-3 col-3 skils_content" data-aos="fade-right">
               <img src="./images/S_1.png" alt="" />
             </div>
-            <div class="col-md-3 col-3 skils_content">
+            <div class="col-md-3 col-3 skils_content" data-aos="fade-up">
               <img src="./images/S_2.png" alt="" />
             </div>
-            <div class="col-md-3 col-4 skils_content">
+            <div class="col-md-3 col-4 skils_content" data-aos="fade-down">
               <img src="./images/S_3.png" alt="" />
             </div>
-            <div class="col-md-3 col-4 skils_content">
+            <div class="col-md-3 col-4 skils_content" data-aos="fade-left">
               <img src="./images/S_4.png" alt="" />
             </div>
-            <div class="col-md-3 col-4 skils_content">
+            <div class="col-md-3 col-4 skils_content" data-aos="fade-right">
               <img src="./images/S_5.png" alt="" />
             </div>
-            <div class="col-md-3 col-4 skils_content">
+            <div class="col-md-3 col-4 skils_content" data-aos="fade-up">
               <img src="./images/S_6.png" alt="" />
             </div>
-            <div class="col-md-3 col-4 skils_content">
+            <div class="col-md-3 col-4 skils_content" data-aos="fade-down">
               <img src="./images/S_7.png" alt="" />
             </div>
-            <div class="col-md-3 col-4 skils_content">
+            <div class="col-md-3 col-4 skils_content" data-aos="fade-left">
               <img src="./images/S_8@2x.png" alt="" />
             </div>
           </div>
@@ -349,36 +353,43 @@
     </section>
 
      <section class="PILLARS">
+
+      <div class="pillars-back">
+        <div class="pillars-back-img">
+            <img src="./images/Scroll Group 16.png" alt="">
+        </div>
+      </div>
+
       <div class="container">
         <div class="headding">
-          <h2>OUR PILLARS</h2>
+          <h2 data-aos="fade-up">OUR PILLARS</h2>
         </div>
         <div class="row PILLARS1">
           <div class="col-md-6 PILLARS-ITEM1 PILLARS-ITEM5">
-            <img src="./images/Component 13 – 1.png" alt="" class="cont-1-1" />
-            <img src="./images/Component 13 – 2.png" alt="" class="cont-1-2" />
+            <img src="./images/Component 13 – 1.png" alt="" class="cont-1-1" data-aos="fade-left" />
+            <img src="./images/Component 13 – 2.png" alt="" class="cont-1-2" data-aos="fade-left" />
           </div>
-          <div class="col-md-6 PILLARS-ITEM">
-            <img src="./images/13.png" alt="" />
+          <div class="col-md-6 PILLARS-ITEM" data-aos="fade-left">
+            <img src="./images/13.png" alt=""  />
           </div>
         </div>
 
-        <div class="row PILLARS1 -mt-5">
-          <div class="col-md-6 PILLARS-ITEM">
+        <div class="row PILLARS1 -mt-5" data-aos="fade-left">
+          <div class="col-md-6 PILLARS-ITEM"  >
             <img src="./images/14.png" alt="" />
           </div>
           <div class="col-md-6 PILLARS-ITEM3">
-            <img src="./images/Component 14 – 1.png" alt="" class="cont-2-1 " />
+            <img src="./images/Component 14 – 1.png" alt="" class="cont-2-1 "  />
             <img src="./images/Component 14 – 2.png" alt="" class="cont-2-2" />
           </div>
         </div>
 
         <div class="row PILLARS1">
-          <div class="col-md-6 PILLARS-ITEM1">
+          <div class="col-md-6 PILLARS-ITEM1" data-aos="fade-up">
             <img src="./images/Component 15 – 1.png" alt=""  class="cont-3-1"/>
-            <img src="./images/Component 15 – 2.png" alt=""  class="cont-3-2"/>
+            <img src="./images/Component 15 – 2.png" alt=""  class="cont-3-2 mt-5"/>
           </div>
-          <div class="col-md-6 PILLARS-ITEM">
+          <div class="col-md-6 PILLARS-ITEM" data-aos="fade-down">
             <img src="./images/15.png" alt="" />
           </div>
         </div>
@@ -387,22 +398,33 @@
     </section>
 
     <section class="flow">
+      <div class="picker_background">
+        <div class="picker-background-img">
+            <img src="./images/Scroll Group 21.png" alt="">
+        </div>
+    </div>
+
+    <div class="picker_background picker_background1">
+        <div class="picker-background-img picker-background-img1">
+            <img src="./images/Scroll Group 21.png" alt="">
+        </div>
+    </div>
       <div class="container">
         <div class="headding">
-          <h2>FLOW</h2>
-          <p>
+          <h2 data-aos="fade-up">FLOW</h2>
+          <p data-aos="fade-up">
             SO WE BUILD IN UNCERTAINTY, <br />
             OUR SOLACE, THE METHOD TO MADNESS
           </p>
         </div>
 
         <div class="flow_item">
-          <img src="./images/Flow_Compressed.gif" alt="" />
+          <img src="./images/Flow_Compressed.gif" alt=""  class="flow_img" />
           <div class="flow-item-img">
-            <img src="./images/Component 17 – 1.png" alt="" />
-            <img src="./images/Component 18 – 1.png" alt="" />
-            <img src="./images/Component 19 – 1.png" alt="" />
-            <img src="./images/Component 20 – 1.png" alt="" />
+            <img src="./images/Component 17 – 1.png" alt="" data-aos="fade-down" />
+            <img src="./images/Component 18 – 1.png" alt="" data-aos="fade-up"/>
+            <img src="./images/Component 19 – 1.png" alt="" data-aos="fade-right"/>
+            <img src="./images/Component 20 – 1.png" alt="" data-aos="fade-left"/>
           </div>
 
           <div class="nobile">
@@ -420,8 +442,8 @@
       <div class="ress_img mb-5">
         <img src="./images/Mask Group 1.png" alt="" />
         <div class="rise_content">
-          <h2>RISE OF OTTO</h2>
-          <p>
+          <h2 data-aos="fade-up">RISE OF OTTO</h2>
+          <p data-aos="fade-up">
             We are proud to present to you an action packed <br />
             fantasy RPG game build on Sandbox.
           </p>
@@ -433,9 +455,10 @@
     <section class="COLLECTION">
       <div class="container mb-5">
         <div class="headding">
-          <h2>ASSETS COLLECTION</h2>
-          <div class="ourbtn">
-            <button class="about_btn">PORTFOLIO</button>
+          <h2 data-aos="fade-up">ASSETS COLLECTION</h2>
+          <div class="ourbtn" data-aos="fade-up">
+            <a href="protfolio.html" class="about_btn">PORTFOLIO</a>
+            <!-- <img src="./images//Component 3 – 6.svg" alt="" class="btn-btn-1"> -->
             <div class="btn-btn-1"></div>
             <div class="btn-btn-2"></div>
             <div class="btn-btn-3"></div>
@@ -443,25 +466,25 @@
           </div>
         </div>
         <div class="row COLLECTION_IMG mb-4">
-          <div class="col-md-8 col-8">
+          <div class="col-md-8 col-8" data-aos="fade-left">
             <img src="./images/animal1.png" alt="" />
           </div>
-          <div class="col-md-4 col-4">
+          <div class="col-md-4 col-4" data-aos="fade-right">
             <img src="./images/Red Monster Action.png" alt="" />
           </div>
         </div>
 
         <div class="row COLLECTION_IMG mb-5">
-          <div class="col-md-3 col-3">
+          <div class="col-md-3 col-3 " data-aos="fade-left">
             <img src="./images/3.png" alt="" />
           </div>
-          <div class="col-md-3 col-3">
+          <div class="col-md-3 col-3" data-aos="fade-up">
             <img src="./images/boss 3.png" alt="" />
           </div>
-          <div class="col-md-3 col-3">
+          <div class="col-md-3 col-3" data-aos="fade-down">
             <img src="./images/small robot 2.png" alt="" />
           </div>
-          <div class="col-md-3 col-3">
+          <div class="col-md-3 col-3" data-aos="fade-right">
             <img src="./images/1.png" alt="" />
           </div>
         </div>
@@ -476,20 +499,20 @@
           <div class="container">
             <div class="row thinking_content_row">
               <div class="col-md-8 col-8 content-rise">
-                <h2>
+                <h2 data-aos="fade-up">
                   Thinking about creating <br />
                   a Metaverse ?
                 </h2>
-                <p>
+                <p data-aos="fade-up">
                   Contact us for a no obligation exploration <br />
                   call to see if we are a great match!
                 </p>
-                <button class="thinking_btn">
+                <button class="thinking_btn" data-aos="fade-up">
                   <img src="./images/Component 22 – 1.png" alt="" />
                 </button>
               </div>
 
-              <div class="col-md-4 col-4 img">
+              <div class="col-md-4 col-4 img" data-aos="fade-down">
                 <img src="./images/Muffin Air Balloon copy.png" alt=""  />
               </div>
             </div>
@@ -501,13 +524,13 @@
    <footer id="footer">
       <div class="hr mb-5"></div>
       <div class="fotter">
-        <div>
+        <div data-aos="fade-left">
           <h3>PRODUCT</h3>
           <a href="index.html">Home</a>
           <a href="protfolio.html">Portfolio</a>
           <a href="#footer">Contact</a>
         </div>
-        <div>
+        <div data-aos="fade-right">
           <h3>COMMUNITY</h3>
           <a href="https://www.artstation.com/aviram_studio" target="_blank">Artstation</a>
           <a href="https://twitter.com/AviramStudio/status/1571515334540267524" target="_blank">Twitter</a>
@@ -520,6 +543,16 @@
       </div>
     </footer>
 
+
+    <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/modernizr-3.11.2.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script>
+      AOS.init({
+          duration: 800,
+      });
+  </script>
   </body>
 </html>
