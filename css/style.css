@@ -297,7 +297,7 @@ a {
   font-family: AirbnbCereal_W_Lt;
   line-height: 1.9;
 }
-.about_text span{
+.about_text span {
   font-size: 21px;
   font-family: AirbnbCereal_W_XBd;
 }
@@ -671,7 +671,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
-
 }
 
 .skils_content_item .skils_content {
@@ -1019,11 +1018,11 @@ footer {
   padding-top: 100px;
 }
 
-.singal_hover{
+.singal_hover {
   position: relative;
 }
 
-.singal_hover_shape{
+.singal_hover_shape {
   position: absolute;
   top: 0;
   right: 0;
@@ -1034,23 +1033,21 @@ footer {
   overflow: hidden;
 }
 
-
-
-.singal_hover .singal_hover_shape .dot{
+.singal_hover .singal_hover_shape .dot {
   position: absolute;
   top: -26px;
   left: -105px;
   font-size: 30px;
   color: yellow;
 }
-.singal_hover .singal_hover_shape .dot2{
+.singal_hover .singal_hover_shape .dot2 {
   position: absolute;
   top: 7px;
   left: -282px;
   font-size: 30px;
   color: yellow;
 }
-.singal_hover .singal_hover_shape .dot3{
+.singal_hover .singal_hover_shape .dot3 {
   position: absolute;
   top: -49px;
   left: -30px;
@@ -1058,14 +1055,14 @@ footer {
   color: yellow;
 }
 
-.singal_hover .singal_hover_shape .dot4{
+.singal_hover .singal_hover_shape .dot4 {
   position: absolute;
   top: -47px;
   left: -182px;
   font-size: 30px;
   color: yellow;
 }
-.singal_hover .singal_hover_shape .plus{
+.singal_hover .singal_hover_shape .plus {
   position: absolute;
   top: -43px;
   left: -265px;
@@ -1073,7 +1070,7 @@ footer {
   color: yellow;
 }
 
-.singal_hover .singal_hover_shape .plus2{
+.singal_hover .singal_hover_shape .plus2 {
   position: absolute;
   top: 0px;
   left: 3px;
@@ -1081,7 +1078,7 @@ footer {
   color: yellow;
 }
 
-.single-item_hero  .singal_hover> img {
+.single-item_hero .singal_hover > img {
   width: 250px;
   height: 150px;
   cursor: pointer;
@@ -1089,12 +1086,10 @@ footer {
   margin-bottom: 10px;
 }
 
-.single-item_hero  .singal_hover:hover .singal_hover_shape{
+.single-item_hero .singal_hover:hover .singal_hover_shape {
   opacity: 1;
   transform: translateY(-8px);
 }
-
-
 
 .single-item_hero .active {
   border-bottom: 2px solid #fff;
@@ -1323,7 +1318,7 @@ footer {
 
 /*Shape Design start*/
 
-.shape{
+.shape {
   transition: 0.5s ease;
 }
 
@@ -1399,7 +1394,6 @@ footer {
 }
 
 @media screen and (max-width: 1383px) {
-
   .main {
     height: 95vh;
     width: 100%;
@@ -1478,9 +1472,9 @@ footer {
   }
 
   .skils_content_item {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .skils_content {
@@ -1585,17 +1579,17 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px)  {
+@media only screen and (min-width: 768px) {
   #pick-area .single-item {
     padding: 10px;
     margin-top: 70px;
-    background: #26323F;
+    background: #26323f;
     height: 391px;
     width: 223px;
     border: 1px solid #707070;
     border-radius: 19px;
     position: relative;
-}
+  }
 }
 @media screen and (max-width: 991px) {
   .flow_item {
@@ -1625,8 +1619,6 @@ footer {
     opacity: 1;
     z-index: 3333;
   }
-
-  
 
   .nobile img:nth-child(2) {
     width: 300px;
@@ -1665,20 +1657,20 @@ footer {
     font-size: 48px;
     color: #243549;
   }
-  .nobile :nth-child(6){
+  .nobile :nth-child(6) {
     position: absolute;
     top: 233px;
     left: -6%;
     font-size: 48px;
     color: #243549;
-  } 
-  .nobile :nth-child(7){
+  }
+  .nobile :nth-child(7) {
     position: absolute;
     top: 432px;
     left: -6%;
     font-size: 48px;
     color: #243549;
-  } 
+  }
   .nobile :nth-child(8) {
     position: absolute;
     top: 632px;
@@ -1686,7 +1678,6 @@ footer {
     font-size: 48px;
     color: #243549;
   }
-
 
   .content-rise h2 {
     font-size: 25px;
@@ -1716,7 +1707,6 @@ footer {
     font-size: 25px;
   }
 
-
   .navber {
     display: flex;
     align-items: center;
@@ -1734,12 +1724,12 @@ footer {
     overflow: hidden;
     z-index: 9;
   }
-  
+
   .logo img {
     width: 200px;
     height: 80px;
   }
-  
+
   .item {
     list-style: none;
     display: flex;
@@ -1747,8 +1737,6 @@ footer {
     justify-content: center;
     gap: 40px;
   }
-
-
 
   .headding {
     display: flex;
@@ -1962,7 +1950,7 @@ footer {
     gap: 10px;
     margin-right: 10px;
   }
-  
+
   .navbar-nav .nav-item .nav-link {
     text-decoration: none;
     font-size: 25px !important;
@@ -1971,7 +1959,7 @@ footer {
     font-weight: 500;
   }
 
-  .shape{
+  .shape {
     display: none;
   }
 
@@ -2327,7 +2315,7 @@ footer {
     display: none;
   }
 
-  .hr{
+  .hr {
     display: none;
   }
 
@@ -2397,15 +2385,14 @@ footer {
     margin-right: 20px;
   }
 
-  .flow{
+  .flow {
     overflow: hidden;
   }
 
-  .single-item_hero  .singal_hover> img {
+  .single-item_hero .singal_hover > img {
     width: 130px;
     height: 80px;
   }
-
 }
 
 @media screen and (max-width: 403px) {
@@ -2461,24 +2448,27 @@ footer {
 }
 
 @media screen and (max-width: 375px) {
-  .flow{
+  .flow {
     overflow: hidden;
   }
-  .picker_background{
+  .picker_background {
     display: none;
   }
 
   #pick-area .single-item {
     padding: 15px;
     margin-top: 70px;
-    background: #26323F;
+    background: #26323f;
     height: 391px;
     width: 300px;
     border: 1px solid #707070;
     border-radius: 19px;
     position: relative;
     padding-left: -29px !important;
-}
+  }
+  .ppp {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2495,14 +2485,13 @@ footer {
     margin-left: 30px;
   }
 
-  .about_text h2{
+  .about_text h2 {
     font-size: 30px;
-  } 
+  }
 
-
-  .about_text p{
+  .about_text p {
     font-size: 18px;
     font-family: AirbnbCereal_W_Lt;
     line-height: 1.9;
-  } 
+  }
 }
