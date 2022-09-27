@@ -1030,7 +1030,6 @@ footer {
   font-size: 30px;
   opacity: 0;
   transition: 0.5s ease;
-  overflow: hidden;
 }
 
 .singal_hover .singal_hover_shape .dot {
@@ -1086,7 +1085,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.single-item_hero .singal_hover:hover .singal_hover_shape {
+.singal_hover:hover .singal_hover_shape {
   opacity: 1;
   transform: translateY(-8px);
 }
