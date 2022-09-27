@@ -2392,6 +2392,46 @@ footer {
     width: 130px;
     height: 80px;
   }
+
+  .skils_content_item :nth-child(1) img {
+    width: 39px;
+    height: 66px;
+  }
+
+  .skils_content_item :nth-child(2) img {
+    width: 100px;
+    height: 56px;
+  }
+
+  .skils_content_item :nth-child(3) img {
+    width: 55px;
+    height:57px;
+  }
+
+  .skils_content_item :nth-child(4) img {
+    width: 80px;
+    height: 60px;
+  }
+
+  .skils_content_item :nth-child(5) img {
+    width: 80px;
+    height: 60px;
+  }
+
+  .skils_content_item :nth-child(6) img {
+    width: 43px;
+    height: 56px;
+  }
+
+  .skils_content_item :nth-child(7) img {
+    width: 100px;
+    height: 70px;
+  }
+
+  .skils_content_item :nth-child(8) img {
+    width: 112px;
+    height: 67px;
+  }
 }
 
 @media screen and (max-width: 403px) {
@@ -2444,6 +2484,15 @@ footer {
     height: 190px;
     opacity: 0.3;
   }
+
+  .singal_hover_shape{
+    display: none;
+    opacity: 0;
+  }
+
+  .pillars-back-img{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -2468,6 +2517,15 @@ footer {
   .ppp {
     padding-left: 0;
   }
+
+  .skils_content_item .skils_content{
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 70px;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
