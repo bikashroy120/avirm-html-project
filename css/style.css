@@ -101,21 +101,25 @@ a {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-top: 15px;
   margin-right: 10px;
 }
 
-.item li a {
+.navbar-nav .nav-item .nav-link {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px !important;
   color: rgb(212, 212, 212);
   font-family: AirbnbCereal_W_Lt;
   font-weight: 500;
 }
 
-.nav ul li .active {
+.navbar-nav .nav-item .activ {
   color: #fff;
   font-family: AirbnbCereal_W_Bd;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
 }
 
 .ber {
@@ -288,14 +292,19 @@ a {
 
 .about_text p {
   font-size: 20px;
-  font-family: AirbnbCereal_W_Bk;
   letter-spacing: 1px;
   line-height: 1.5;
+  font-family: AirbnbCereal_W_Lt;
+  line-height: 1.9;
+}
+.about_text span{
+  font-size: 21px;
+  font-family: AirbnbCereal_W_XBd;
 }
 
 .about_area {
   width: 100%;
-  height: 700px;
+  height: 713px;
   background-color: #000c19;
   /* background-image: url(../images/Group\ 5.png); */
   /* background: linear-gradient(tomato,orangered); */
@@ -513,7 +522,8 @@ a {
 }
 
 .hover_effaet {
-  display: none;
+  opacity: 0;
+  transition: 0.5s ease;
 }
 
 .hover_effaet .plus {
@@ -580,8 +590,7 @@ a {
 }
 
 .about_box_item:hover .hover_effaet {
-  display: inline;
-  transform: scaleY(-0.4);
+  opacity: 1;
 }
 
 .secend_img img {
@@ -661,6 +670,8 @@ a {
 .skils_content_item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+
 }
 
 .skils_content_item .skils_content {
@@ -1008,13 +1019,83 @@ footer {
   padding-top: 100px;
 }
 
-.single-item_hero > img {
+.singal_hover{
+  position: relative;
+}
+
+.singal_hover_shape{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: yellow;
+  font-size: 30px;
+  opacity: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+
+
+
+.singal_hover .singal_hover_shape .dot{
+  position: absolute;
+  top: -26px;
+  left: -105px;
+  font-size: 30px;
+  color: yellow;
+}
+.singal_hover .singal_hover_shape .dot2{
+  position: absolute;
+  top: 7px;
+  left: -282px;
+  font-size: 30px;
+  color: yellow;
+}
+.singal_hover .singal_hover_shape .dot3{
+  position: absolute;
+  top: -49px;
+  left: -30px;
+  font-size: 30px;
+  color: yellow;
+}
+
+.singal_hover .singal_hover_shape .dot4{
+  position: absolute;
+  top: -47px;
+  left: -182px;
+  font-size: 30px;
+  color: yellow;
+}
+.singal_hover .singal_hover_shape .plus{
+  position: absolute;
+  top: -43px;
+  left: -265px;
+  font-size: 30px;
+  color: yellow;
+}
+
+.singal_hover .singal_hover_shape .plus2{
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  font-size: 30px;
+  color: yellow;
+}
+
+.single-item_hero  .singal_hover> img {
   width: 250px;
   height: 150px;
   cursor: pointer;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+
+.single-item_hero  .singal_hover:hover .singal_hover_shape{
+  opacity: 1;
+  transform: translateY(-8px);
+}
+
+
+
 .single-item_hero .active {
   border-bottom: 2px solid #fff;
 }
@@ -1087,6 +1168,7 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 15px;
 }
 #pick-area .button-area .single-btn {
   background: #26323f;
@@ -1110,7 +1192,7 @@ footer {
   background: #26323f;
   height: 391px;
   width: 219px;
-  border: 1px solid #707070;
+  border: 2px solid #707070;
   border-radius: 19px;
   position: relative;
 }
@@ -1232,6 +1314,7 @@ footer {
 #pick-area .single-item:hover {
   border: 2px solid yellow;
   transition: 0.5s ease;
+  transform: translateY(-8px);
 }
 #pick-area .single-item:hover a {
   display: inline-block;
@@ -1240,12 +1323,17 @@ footer {
 
 /*Shape Design start*/
 
+.shape{
+  transition: 0.5s ease;
+}
+
 .shape .dot {
   position: absolute;
   color: yellow !important;
   font-size: 35px;
   margin-left: -40px;
   margin-top: -300px;
+  transform: translateX(2);
 }
 .shape .dot2 {
   position: absolute;
@@ -1253,6 +1341,7 @@ footer {
   font-size: 35px;
   margin-left: 150px;
   margin-top: -400px;
+  transition: 0.5s ease;
 }
 .shape .dot3 {
   position: absolute;
@@ -1283,13 +1372,15 @@ footer {
   margin-left: 280px;
   margin-top: -250px;
   rotate: 45deg;
+  transition: 0.4s;
 }
 .shape {
-  display: none;
+  opacity: 0;
 }
 #pick-area .single-item:hover .shape {
-  display: block;
+  opacity: 1;
   transition: 0.5s ease;
+  transform: translateY(-16px);
 }
 /*Shape Design end*/
 
@@ -1387,11 +1478,9 @@ footer {
   }
 
   .skils_content_item {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   }
 
   .skils_content {
@@ -1568,6 +1657,37 @@ footer {
     transform: translateX(-50%);
     opacity: 1;
   }
+
+  .nobile :nth-child(5) {
+    position: absolute;
+    top: -13px;
+    left: -6%;
+    font-size: 48px;
+    color: #243549;
+  }
+  .nobile :nth-child(6){
+    position: absolute;
+    top: 233px;
+    left: -6%;
+    font-size: 48px;
+    color: #243549;
+  } 
+  .nobile :nth-child(7){
+    position: absolute;
+    top: 432px;
+    left: -6%;
+    font-size: 48px;
+    color: #243549;
+  } 
+  .nobile :nth-child(8) {
+    position: absolute;
+    top: 632px;
+    left: -6%;
+    font-size: 48px;
+    color: #243549;
+  }
+
+
   .content-rise h2 {
     font-size: 25px;
   }
@@ -1595,6 +1715,40 @@ footer {
   .hero_area h2 {
     font-size: 25px;
   }
+
+
+  .navber {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0px auto;
+    background-color: #8f6f3e;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    opacity: 1;
+    /* backdrop-filter: blur(39px);
+    -webkit-backdrop-filter: blur(39px); */
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    z-index: 9;
+  }
+  
+  .logo img {
+    width: 200px;
+    height: 80px;
+  }
+  
+  .item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+
 
   .headding {
     display: flex;
@@ -1800,6 +1954,23 @@ footer {
     overflow: hidden;
   }
 
+  .item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    font-size: 25px !important;
+    color: rgb(212, 212, 212);
+    font-family: AirbnbCereal_W_Lt;
+    font-weight: 500;
+  }
+
   .shape{
     display: none;
   }
@@ -1831,7 +2002,7 @@ footer {
     background-size: cover;
   }
 
-  .navber {
+  /* .navber {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -1849,7 +2020,7 @@ footer {
     overflow: hidden;
     width: 250px;
     position: relative;
-  }
+  } */
 
   .logo img {
     z-index: 22222;
@@ -1929,7 +2100,7 @@ footer {
   .cont-2-2,
   .cont-3-2 {
     display: initial;
-    width: 350px;
+    width: 30px;
   }
 
   .PILLARS-ITEM img {
@@ -2048,6 +2219,16 @@ footer {
     opacity: 0.3;
   }
 
+  .flow_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    padding-bottom: 150px;
+    position: relative;
+    max-width: 1200px;
+  }
+
   .img img {
     opacity: 0.2;
   }
@@ -2146,6 +2327,10 @@ footer {
     display: none;
   }
 
+  .hr{
+    display: none;
+  }
+
   .hover_effaet .plus {
     position: absolute;
 
@@ -2212,16 +2397,88 @@ footer {
     margin-right: 20px;
   }
 
-  @media screen and (max-width: 325px) {
-    .img {
-      position: absolute;
-      top: 30px;
-      right: 100px;
-      width: 170px;
-      height: 190px;
-      opacity: 0.2;
-    }
+  .flow{
+    overflow: hidden;
   }
+
+  .single-item_hero  .singal_hover> img {
+    width: 130px;
+    height: 80px;
+  }
+
+}
+
+@media screen and (max-width: 403px) {
+  .nobile img:nth-child(1) {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 3333;
+  }
+
+  .nobile img:nth-child(2) {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 235px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+
+  .nobile img:nth-child(3) {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 431px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+
+  .nobile img:nth-child(4) {
+    width: 300px;
+    height: 270px;
+    position: absolute;
+    top: 634px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+
+  .img {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 150px;
+    height: 190px;
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .flow{
+    overflow: hidden;
+  }
+  .picker_background{
+    display: none;
+  }
+
+  #pick-area .single-item {
+    padding: 15px;
+    margin-top: 70px;
+    background: #26323F;
+    height: 391px;
+    width: 300px;
+    border: 1px solid #707070;
+    border-radius: 19px;
+    position: relative;
+    padding-left: -29px !important;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -2235,5 +2492,17 @@ footer {
   .about_text {
     padding-top: 100px;
     color: #fff;
+    margin-left: 30px;
   }
+
+  .about_text h2{
+    font-size: 30px;
+  } 
+
+
+  .about_text p{
+    font-size: 18px;
+    font-family: AirbnbCereal_W_Lt;
+    line-height: 1.9;
+  } 
 }

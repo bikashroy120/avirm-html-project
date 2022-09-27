@@ -76,7 +76,7 @@
     margin-top: 70px;
     background: #26323F;
     height: 391px;
-    width: 300px;
+    width: 250px;
     border: 1px solid #707070;
     border-radius: 19px;
     position: relative;
@@ -93,6 +93,8 @@
 }
 
 }
+
+
 
 
 @media(min-width:425px){
